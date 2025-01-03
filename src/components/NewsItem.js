@@ -14,6 +14,7 @@ export class NewsItem extends Component {
     <a href="/" className="btn btn-primary">Go somewhere</a>
   </div>
 </div>
+
       </div>
     )
   }
