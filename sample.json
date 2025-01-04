@@ -1,106 +1,45 @@
 {
   "status": "ok",
-  "totalResults": 10,
+  "totalResults": 3,
   "articles": [
     {
-      "source": { "id": "bbc-news", "name": "BBC News" },
-      "author": "BBC News",
-      "title": "Gavin and Stacey: New clip reveals rare fishing trip moment",
-      "description": "Gavin and Stacey fans finally get a brief look at Uncle Bryn and Jason on the ill-fated fishing trip.",
-      "url": "https://www.bbc.co.uk/news/articles/c9wl0e8knkqo",
-      "urlToImage": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/2c12/live/db121a50-c92e-11ef-87df-d575b9a434a4.jpg",
-      "publishedAt": "2025-01-02T18:22:21.7781765Z",
-      "content": "The clip gives us our first ever look at the fishing trip itself, with both Brydon and Wilfort appearing as younger versions of their iconic Gavin &amp; Stacey characters.\r\n\"Who do we have here?\" say… [+579 chars]"
+      "source": {
+        "id": "news-com-au",
+        "name": "News.com.au"
+      },
+      "author": null,
+      "title": "Debutant’s parents go viral with request",
+      "description": "Beau Webster’s parents have won over the hearts of cricket fans with a wholesome request posted to social media.",
+      "url": "https://www.news.com.au/sport/cricket/beau-websters-parents-go-viral-with-last-minute-facebook-request/news-story/d11f2aa5ccf8f34f3f5dc2aaf7ae4fda",
+      "urlToImage": "https://content.api.news/v3/images/bin/3a4b8154d13e79017e9c0d1537f572b8",
+      "publishedAt": "2025-01-02T18:29:00Z",
+      "content": "Beau Webster’s parents have won over the hearts of cricket fans with a wholesome request posted to social media.\r\nWebster was named to make his debut for the New Year’s Test with Mitch Marsh axed fro… [+3841 chars]"
     },
     {
-      "source": { "id": "bbc-news", "name": "BBC News" },
-      "author": "BBC News",
-      "title": "Zambia police say officer freed suspects to celebrate New Year",
-      "description": "A manhunt is underway for the 13 suspects, who were allegedly released by an intoxicated police officer.",
-      "url": "https://www.bbc.co.uk/news/articles/cx2w51gjxpro",
-      "urlToImage": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/6bf7/live/920c3cf0-c910-11ef-94cb-5f844ceb9e30.jpg",
-      "publishedAt": "2025-01-02T17:52:30.8260381Z",
-      "content": "Police spokesperson Rae Hamoonga said that Mr Phiri, \"in a state of intoxication, forcibly seized cell keys\" from constable Serah Banda on New Year's Eve.\r\n\"Subsequently, detective inspector Phiri un… [+843 chars]"
+      "source": {
+        "id": "espn-cric-info",
+        "name": "ESPN Cric Info"
+      },
+      "author": null,
+      "title": "PCB hands Umar Akmal three-year ban from all cricket | ESPNcricinfo.com",
+      "description": "Penalty after the batsman pleaded guilty to not reporting corrupt approaches | ESPNcricinfo.com",
+      "url": "http://www.espncricinfo.com/story/_/id/29103103/pcb-hands-umar-akmal-three-year-ban-all-cricket",
+      "urlToImage": "https://a4.espncdn.com/combiner/i?img=%2Fi%2Fcricket%2Fcricinfo%2F1099495_800x450.jpg",
+      "publishedAt": "2020-04-27T11:41:47Z",
+      "content": "Umar Akmal's troubled cricket career has hit its biggest roadblock yet, with the PCB handing him a ban from all representative cricket for three years after he pleaded guilty of failing to report det… [+1506 chars]"
     },
     {
-      "source": { "id": "bbc-news", "name": "BBC News" },
-      "author": "BBC News",
-      "title": "Kemi Badenoch calls for national inquiry into 'rape gangs'",
-      "description": "Alexis Jay, who led a major inquiry into historical child sex abuse, says changes are needed, not more research.",
-      "url": "https://www.bbc.co.uk/news/articles/cn4xnv02nr0o",
-      "urlToImage": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/7e93/live/d5743670-c904-11ef-b64d-9d290e039e0a.jpg",
-      "publishedAt": "2025-01-02T17:52:24.1533415Z",
-      "content": "In 2022, an independent inquiry by Greater Manchester Combined Authority found that vulnerable children were left exposed to sexual exploitation in Oldham because of \"serious failings\" by the police … [+1758 chars]"
-    },
-    {
-      "source": { "id": "bbc-news", "name": "BBC News" },
-      "author": "BBC News",
-      "title": "Syria: New government's school curriculum changes spark concern",
-      "description": "The curriculum will take on a more Islamic slant, with evolution and Big Bang theory dropped from science.",
-      "url": "https://www.bbc.co.uk/news/articles/c1ln12056ppo",
-      "urlToImage": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/5fd6/live/31ef3e30-c91a-11ef-87df-d575b9a434a4.jpg",
-      "publishedAt": "2025-01-02T17:22:19.3730147Z",
-      "content": "The changes have been welcomed by some Syrians.\r\nBut the move has set off alarm bells among resurgent civil society activists, many of whom have returned to Syria for the first time in many years.\r\nT… [+1129 chars]"
-    },
-    {
-      "source": { "id": "bbc-news", "name": "BBC News" },
-      "author": "BBC News",
-      "title": "Fake adverts: 'I died inside – I had fallen victim to a scam'",
-      "description": "People are being warned to remain vigilant as the number of holiday scam reports rise.",
-      "url": "https://www.bbc.co.uk/news/articles/c3rqjwdg35go",
-      "urlToImage": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/af3d/live/ec1989c0-c698-11ef-9195-9784670f153a.jpg",
-      "publishedAt": "2025-01-02T16:07:17.6386452Z",
-      "content": "Ms Shek, a single mother from Lingfield in Surrey, said she had spoken on the phone to a man who said he owned the property. \r\nShe asked to see his ID and a utility bill for the property, which he pr… [+575 chars]"
-    },
-    {
-      "source": { "id": "bbc-news", "name": "BBC News" },
-      "author": "BBC News",
-      "title": "Twenty Broxtowe councillors quit Labour over Starmer's leadership",
-      "description": "The group have accused the party of \"abandoning traditional Labour values\" in recent months.",
-      "url": "https://www.bbc.co.uk/news/articles/cewxrzq0489o",
-      "urlToImage": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/8c02/live/1f6d07b0-c915-11ef-bf07-792f82a1779e.png",
-      "publishedAt": "2025-01-02T15:52:21.8258474Z",
-      "content": "Radulovic said of the move that he was \"deeply saddened\" but had been placed in an \"impossible position\".\r\n\"I cannot support and will not support another centrist government intent on destroying loca… [+587 chars]"
-    },
-    {
-      "source": { "id": "bbc-news", "name": "BBC News" },
-      "author": "BBC News",
-      "title": "London: Man dies after four people hit by car on Christmas Day",
-      "description": "A man who was hurt when a car hit pedestrians in London's West End on Christmas Day has died.",
-      "url": "https://www.bbc.co.uk/news/articles/c5ywvrd4p50o",
-      "urlToImage": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/1a2d/live/537ff930-6139-11ee-b101-6f93d6dfbcc2.png",
-      "publishedAt": "2025-01-02T15:07:16.215934Z",
-      "content": "A man who was hurt when a car hit pedestrians in London's West End on Christmas Day has died.\r\nAidan Chapman, 25, died in hospital on New Year's Eve from the injuries he sustained, the Met Police sai… [+386 chars]"
-    },
-    {
-      "source": { "id": "bbc-news", "name": "BBC News" },
-      "author": "BBC News",
-      "title": "Stormzy: Rapper gets nine-month driving ban for using phone",
-      "description": "An undercover officer caught the rapper using a mobile phone behind the wheel of a Rolls-Royce.",
-      "url": "https://www.bbc.co.uk/news/articles/c3vr077965wo",
-      "urlToImage": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/e229/live/9d7f9ca0-c8fa-11ef-8c70-abd07497aef8.jpg",
-      "publishedAt": "2025-01-02T11:37:21.1234191Z",
-      "content": "Previously, he admitted driving a Lamborghini Urus that had front windows illegally tinted to only 4% light transmission, violating the 70% requirement.\r\nProsecutor Alice Holloway said the vehicle's … [+432 chars]"
-    },
-    {
-      "source": { "id": "bbc-news", "name": "BBC News" },
-      "author": "BBC News",
-      "title": "UK's biggest ever dinosaur footprint trackways unearthed",
-      "description": "About 200 footprints made by dinosaurs 166 million years ago have been unearthed in a quarry in Oxfordshire.",
-      "url": "https://www.bbc.co.uk/news/articles/c24nzeqq1l2o",
-      "urlToImage": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/f132/live/faaadac0-bd4c-11ef-a2ca-e99d0c9a24e3.jpg",
-      "publishedAt": "2025-01-02T07:07:15.3887637Z",
-      "content": "The environment they lived in was covered by a warm, shallow lagoon and the dinosaurs left their prints as they ambled across the mud.\r\n\"Something must have happened to preserve these in the fossil r… [+909 chars]"
-    },
-    {
-      "source": { "id": "bbc-news", "name": "BBC News" },
-      "author": "BBC News",
-      "title": "UK weather: Three days of heavy snow forecast across UK",
-      "description": "Rural communities could be cut off and schools forced to close, with up to 20cm of snow forecast in places, the Met Office says.",
-      "url": "https://www.bbc.co.uk/news/articles/cp3104v552jo",
-      "urlToImage": "https://ichef.bbci.co.uk/ace/branded_news/1200/cpsprodpb/9270/live/9ce846a0-c8a2-11ef-abc5-735812319d60.jpg",
-      "publishedAt": "2025-01-02T01:07:18.5757261Z",
-      "content": "The snow warning starts at noon on Saturday until 09:00 GMT on Monday and covers all regions of England apart from the South West, the majority of Wales and parts of southern Scotland.\r\nAbout 5cm of … [+1076 chars]"
+      "source": {
+        "id": "espn-cric-info",
+        "name": "ESPN Cric Info"
+      },
+      "author": null,
+      "title": "What we learned from watching the 1992 World Cup final in full again | ESPNcricinfo.com",
+      "description": "Wides, lbw calls, swing - plenty of things were different in white-ball cricket back then | ESPNcricinfo.com",
+      "url": "http://www.espncricinfo.com/story/_/id/28970907/learned-watching-1992-world-cup-final-full-again",
+      "urlToImage": "https://a4.espncdn.com/combiner/i?img=%2Fi%2Fcricket%2Fcricinfo%2F1219926_1296x729.jpg",
+      "publishedAt": "2020-03-30T15:26:05Z",
+      "content": "Last week, we at ESPNcricinfo did something we have been thinking of doing for eight years now: pretend-live ball-by-ball commentary for a classic cricket match. We knew the result, yes, but we tried… [+6823 chars]"
     }
   ]
 }
