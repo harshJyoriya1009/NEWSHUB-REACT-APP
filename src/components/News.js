@@ -53,8 +53,17 @@ export class News extends Component {
       
     }
   }
+   async componentDidMount(){
+    // console.log("yooyyo");
+     let url = "https://newsapi.org/v2/top-headlines?country=us&apiKey=3393ef06047a4a6e9c2709be629cdcc8";
+     let data = await fetch(url)
+     let parseData= await data.json()
+    //  console.log(parseData)
+    this.setState({ article: parseData.articles }); 
+  }
 
   render() {
+    // console.log("jojjoj")
     return (
       <div className='container my-3'>
         <h1>Today Headlines</h1>
@@ -62,11 +71,12 @@ export class News extends Component {
 
         {this.state.article.map((element)=>{
           return  <div className="col-md-4" key={element.url}>
-          <NewsItem  title={element.title.slice(0,45)} description={element.description.slice(0, 88)} imageUrl={element.urlToImage} newsUrl={element.url}/>
+          <NewsItem  title={element.title?element.title:""} description={element.description?element.description:""} imageUrl={element.urlToImage} newsUrl={element.url}/>
               </div>
         })}
-          
+           
         </div>
+      
       </div>
     )
   }
