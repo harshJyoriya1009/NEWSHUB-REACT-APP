@@ -48,7 +48,8 @@ export class News extends Component {
     super();
     // console.log("Hello my name is Harsh Jyoriya")
     this.state={
-      article: this.article
+      article: this.article,
+      loading: false
       
     }
   }
@@ -59,19 +60,13 @@ export class News extends Component {
         <h1>Today Headlines</h1>
         <div className="row">
 
-            <div className="col-md-4">
-        <NewsItem title="News 1" description="desc" imageUrl="https://a4.espncdn.com/combiner/i?img=%2Fi%2Fcricket%2Fcricinfo%2F1219926_1296x729.jpg" newsUrl="Yet to complete"/>
-            </div>
-
-            <div className="col-md-4">
-        <NewsItem title="News 1" description="desc"/>
-            </div>
-
-            <div className="col-md-4">
-        <NewsItem title="News 1" description="desc"/>
-            </div>          
+        {this.state.article.map((element)=>{
+          return  <div className="col-md-4" key={element.url}>
+          <NewsItem  title={element.title.slice(0,45)} description={element.description.slice(0, 88)} imageUrl={element.urlToImage} newsUrl={element.url}/>
+              </div>
+        })}
+          
         </div>
-      
       </div>
     )
   }
