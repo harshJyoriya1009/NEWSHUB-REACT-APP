@@ -56,7 +56,6 @@ export class News extends Component {
      let url = "https://newsapi.org/v2/top-headlines?country=us&apiKey=3393ef06047a4a6e9c2709be629cdcc8";
      let data = await fetch(url)
      let parseData= await data.json()
-  
     this.setState({ article: parseData.articles }); 
   }
 
