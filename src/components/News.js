@@ -46,7 +46,6 @@ export class News extends Component {
     
   constructor(){
     super();
-    // console.log("Hello my name is Harsh Jyoriya")
     this.state={
       article: this.article,
       loading: false
@@ -54,16 +53,15 @@ export class News extends Component {
     }
   }
    async componentDidMount(){
-    // console.log("yooyyo");
      let url = "https://newsapi.org/v2/top-headlines?country=us&apiKey=3393ef06047a4a6e9c2709be629cdcc8";
      let data = await fetch(url)
      let parseData= await data.json()
-    //  console.log(parseData)
+  
     this.setState({ article: parseData.articles }); 
   }
 
   render() {
-    // console.log("jojjoj")
+
     return (
       <div className='container my-3'>
         <h1>Today Headlines</h1>
