@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
-
+                                       
 export class Navbar extends Component {
   render() {
     return (
       <div>
-        <nav className={`navbar navbar-expand-lg navbar-light bg-light `}>
+        <nav className={`navbar navbar-expand-lg navbar-light bg-light navbar navbar-dark bg-dark`}>
                     <div className="container-fluid">
                     <div className="navbar-brand" to="/">NewsHub</div>
                     
@@ -21,13 +21,17 @@ export class Navbar extends Component {
                             <a className='nav-link active' aria-current='page' href="/about">About</a>
                             
                         </li>
-                           <li className='nav-link active' aria-current='page' href="/about">Business</li>
-                            <li className='nav-link active' aria-current='page' href="/about">Entertainment</li>
-                            <li className='nav-link active' aria-current='page' href="/about">General</li>
-                            <li className='nav-link active' aria-current='page' href="/about">Health</li>
-                            <li className='nav-link active' aria-current='page' href="/about">Science</li>
-                            <li className='nav-link active' aria-current='page' href="/about">Sports</li>
-                            <li className='nav-link active' aria-current='page' href="/about">Technology</li>
+
+                        <li className="nav-item"><a className='nav-link active' aria-current='page' href="/about">About</a></li>
+                        <li className="nav-item"><a className='nav-link active' aria-current='page' href="/about">Business</a></li>
+                        <li className="nav-item"><a className='nav-link active' aria-current='page' href="/about">Entertainment</a></li>
+                        <li className="nav-item"><a className='nav-link active' aria-current='page' href="/about">General</a></li>
+                        <li className="nav-item"><a className='nav-link active' aria-current='page' href="/about">Health</a></li>
+                        <li className="nav-item"><a className='nav-link active' aria-current='page' href="/about">Science</a></li>
+                        <li className="nav-item"><a className='nav-link active' aria-current='page' href="/about">Sports</a></li>
+                        <li className="nav-item"><a className='nav-link active' aria-current='page' href="/about">Technology</a></li>
+
+
                         </ul> 
                     </div>
                     </div>
