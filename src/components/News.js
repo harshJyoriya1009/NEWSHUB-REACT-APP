@@ -1,8 +1,20 @@
 import React, { Component } from 'react'
 import NewsItem from './NewsItem'
 import Spinner from './Spinner';
+import PropTypes from 'prop-types'
+
 
 export class News extends Component {
+
+  static defaultProps={
+    country: "us",
+    pageSize: 5
+  }
+
+  static propType={
+    country: PropTypes.string,
+    pageSize: PropTypes.number
+  }
 
     
   constructor(){
@@ -15,7 +27,7 @@ export class News extends Component {
     }
   }
    async componentDidMount(){
-     let url = `https://newsapi.org/v2/top-headlines?country=us&apiKey=3393ef06047a4a6e9c2709be629cdcc8&page=1&pageSize=${this.props.pageSize}`;
+     let url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&apiKey=3393ef06047a4a6e9c2709be629cdcc8&page=1&pageSize=${this.props.pageSize}`;
      this.setState({loading:true})
      let data = await fetch(url)
      let parseData= await data.json()
@@ -24,7 +36,7 @@ export class News extends Component {
 
   goToPrevious=async()=>{
     // console.log("Previous")
-    let url = `https://newsapi.org/v2/top-headlines?country=us&apiKey=3393ef06047a4a6e9c2709be629cdcc8&page=${this.state.page -1}&pageSize=${this.props.pageSize}`;
+    let url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&apiKey=3393ef06047a4a6e9c2709be629cdcc8&page=${this.state.page -1}&pageSize=${this.props.pageSize}`;
     this.setState({loading:true})
     let data = await fetch(url)
     let parseData= await data.json()
@@ -43,7 +55,7 @@ export class News extends Component {
     
 
     
-    let url = `https://newsapi.org/v2/top-headlines?country=us&apiKey=3393ef06047a4a6e9c2709be629cdcc8&page=${this.state.page +1}&pageSize=${this.props.pageSize}`;
+    let url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&apiKey=3393ef06047a4a6e9c2709be629cdcc8&page=${this.state.page +1}&pageSize=${this.props.pageSize}`;
     this.setState({loading:true})
     let data = await fetch(url)
     let parseData= await data.json()
