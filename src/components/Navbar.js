@@ -1,4 +1,7 @@
 import React, { Component } from 'react'
+import {
+  Link
+} from "react-router-dom";
                                        
 export class Navbar extends Component {
   render() {
@@ -15,15 +18,15 @@ export class Navbar extends Component {
                         <ul className="navbar-nav me-auto mb-2 mb-lg-0">
 
 
-                        <li className="nav-item"><a className="nav-link active" aria-current="page" href="/">Home</a></li>
-                        <li className="nav-item"><a className='nav-link active' aria-current='page' href="/about">About</a></li>
-                        <li className="nav-item"><a className='nav-link active' aria-current='page' href="/about">Business</a></li>
-                        <li className="nav-item"><a className='nav-link active' aria-current='page' href="/about">Entertainment</a></li>
-                        <li className="nav-item"><a className='nav-link active' aria-current='page' href="/about">General</a></li>
-                        <li className="nav-item"><a className='nav-link active' aria-current='page' href="/about">Health</a></li>
-                        <li className="nav-item"><a className='nav-link active' aria-current='page' href="/about">Science</a></li>
-                        <li className="nav-item"><a className='nav-link active' aria-current='page' href="/about">Sports</a></li>
-                        <li className="nav-item"><a className='nav-link active' aria-current='page' href="/about">Technology</a></li>
+                        <li className="nav-item"><Link className="nav-link active" aria-current="page" to="/">Home</Link></li>
+                        {/* <li className="nav-item"><Link className='nav-link active' aria-current='page' to="/about">About</Link></li> */}
+                        <li className="nav-item"><Link className='nav-link active' aria-current='page' to="/business">Business</Link></li>
+                        <li className="nav-item"><Link className='nav-link active' aria-current='page' to="/entertainment">Entertainment</Link></li>
+                        <li className="nav-item"><Link className='nav-link active' aria-current='page' to="/general">General</Link></li>
+                        <li className="nav-item"><Link className='nav-link active' aria-current='page' to="/health">Health</Link></li>
+                        <li className="nav-item"><Link className='nav-link active' aria-current='page' to="/science">Science</Link></li>
+                        <li className="nav-item"><Link className='nav-link active' aria-current='page' to="/sports">Sports</Link></li>
+                        <li className="nav-item"><Link className='nav-link active' aria-current='page' to="/technology">Technology</Link></li>
 
 
                         </ul> 
