@@ -33,7 +33,13 @@ export class News extends Component {
      this.setState({loading:true})
      let data = await fetch(url)
      let parseData= await data.json()
-    this.setState({ article: parseData.articles, totalResults: parseData.totalResults, loading:false }); 
+
+    this.setState({ article: parseData.articles,
+       totalResults: parseData.totalResults,
+        loading:false
+       }); 
+
+
   }
 
   goToPrevious=async()=>{
