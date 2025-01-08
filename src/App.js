@@ -29,7 +29,7 @@ export default class App extends Component {
           <Route path="/technology"><News pageSize={6} country="us" category="technology"/></Route>
         </Switch> */}
 
-        <Routes>  {/* Change here from Switch to Routes */}
+        <Routes>
             <Route path="/business" element={<News key="business" pageSize={6} country="us" category="business" />} />
             <Route path="/entertainment" element={<News key="entertainment" pageSize={6} country="us" category="entertainment" />} />
             <Route path="/general" element={<News key="general" pageSize={6} country="us" category="general" />} />
