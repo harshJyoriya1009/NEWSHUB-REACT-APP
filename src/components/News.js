@@ -18,7 +18,6 @@ export class News extends Component {
     category: PropTypes.string
   }
 
-    
   constructor(){
     super();
     this.state={
@@ -28,53 +27,42 @@ export class News extends Component {
       
     }
   }
-   async componentDidMount(){
-     let url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=3393ef06047a4a6e9c2709be629cdcc8&page=1&pageSize=${this.props.pageSize}`;
-     this.setState({loading:true})
-     let data = await fetch(url)
-     let parseData= await data.json()
 
-    this.setState({ article: parseData.articles,
-       totalResults: parseData.totalResults,
-        loading:false
-       }); 
+  async pageUpdate(){
+    const url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=3393ef06047a4a6e9c2709be629cdcc8&page=${this.state.page}&pageSize=${this.props.pageSize}`;
+    this.setState({loading:true})
+    let data = await fetch(url)
+    let parseData= await data.json()
 
+   this.setState({ article: parseData.articles,
+      totalResults: parseData.totalResults,
+       loading:false
+      }); 
 
   }
 
+  // Fetch converting-----------------------------------------------------------------------------------------
+   async componentDidMount(){
+    this.pageUpdate();
+  }
+
+  // Previous button--------------------------------------------------------------------------------------
   goToPrevious=async()=>{
     // console.log("Previous")
-    let url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=3393ef06047a4a6e9c2709be629cdcc8&page=${this.state.page -1}&pageSize=${this.props.pageSize}`;
-    this.setState({loading:true})
-    let data = await fetch(url)
-    let parseData= await data.json()
- 
-
     this.setState({
-      page: this.state.page -1,
-      article: parseData.articles,
-      loading:false
+      page: this.state.page-1
     })
+    this.pageUpdate();
+    
   }
-
+  
+  // Next button--------------------------------------------------------------------------------------
   goToNext= async()=>{
     // console.log("Next")
-    if(!(this.state.page +1 >Math.ceil(this.state.totalResults/this.props.pageSize))){
-    
-
-    
-    let url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=3393ef06047a4a6e9c2709be629cdcc8&page=${this.state.page +1}&pageSize=${this.props.pageSize}`;
-    this.setState({loading:true})
-    let data = await fetch(url)
-    let parseData= await data.json()
- 
-
-    this.setState({
-      page: this.state.page +1,
-      article: parseData.articles,
-      loading:false
-    })
-  }
+  this.setState({
+    page: this.state.page+1
+  })
+  this.pageUpdate();
   
   }
 
