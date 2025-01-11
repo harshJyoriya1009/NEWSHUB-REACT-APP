@@ -12,6 +12,7 @@ import {
 
 export default class App extends Component {
   pageSize=10;
+  apiKey= process.env.MY_API_KEY
 
   state={
     progress:0
