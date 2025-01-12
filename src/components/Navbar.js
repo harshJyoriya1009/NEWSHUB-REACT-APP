@@ -9,7 +9,7 @@ const Navbar =()=>{
   // render() {
     return (
       <div>
-        <nav className={`navbar navbar-expand-lg navbar-light bg-light navbar navbar-dark bg-dark`}>
+        <nav className={`navbar navbar-expand-lg navbar-light bg-light navbar navbar-dark bg-dark navbar fixed-top`}>
                     <div className="container-fluid">
                     <div className="navbar-brand" to="/">NewsHub</div>
                     

@@ -68,6 +68,7 @@ const News =(props)=>{
   // Fetch converting-----------------------------------------------------------------------------------------
   useEffect(() => {                              //  async componentDidMount(){
     pageUpdate();                                //   this.pageUpdate();
+     //eslint-disable-next-line                  
   }, [])                                         // }
                                                  
                                                  
@@ -107,8 +108,8 @@ const News =(props)=>{
   // }
   
  const fetchMoreData= async()=>{
-    setPage(page+1)
-    const url = `https://newsapi.org/v2/top-headlines?country=${props.country}&category=${props.category}&apiKey=06397fa1da2a4f3eaffaaea05e62261d&page=${page}&pageSize=${props.pageSize}`;
+   const url = `https://newsapi.org/v2/top-headlines?country=${props.country}&category=${props.category}&apiKey=06397fa1da2a4f3eaffaaea05e62261d&page=${page+1}&pageSize=${props.pageSize}`;
+   setPage(page+1)
     let data = await fetch(url)
     let parseData= await data.json()
     setArticle(article.concat(parseData.articles))
@@ -119,7 +120,7 @@ const News =(props)=>{
 
     return (
       <>
-      <div className='container my-3'>
+      <div className='container' style={{marginTop:'65px'}}>
         <h1 className='text-center'>Today Headlines on {capitalizeFirstLetter(props.category)} </h1>
         {loading && <Spinner/>}
         <InfiniteScroll

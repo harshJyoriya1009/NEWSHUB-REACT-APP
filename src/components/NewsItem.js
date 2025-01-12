@@ -9,7 +9,7 @@ const NewsItem=(props)=>{
     let { title, description, imageUrl, newsUrl, author, date} = props;
     return (
       <div className="my-4">
-        <div className="card" style={{ width: "18rem" }}>
+        <div className="card" style={{ width: "25rem" }}>
         {/* <span className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" style={{left: '90%', zIndex:'1'}}>{source}</span> */}
           <img src={!imageUrl?"https://www.washingtonpost.com/wp-apps/imrs.php?src=https://arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/LRQ5T2TNUNAFLGVHT5STSHF4S4_size-normalized.jpg&w=1440":imageUrl} className="card-img-top" alt="Sports news" />
           <div className="card-body">
