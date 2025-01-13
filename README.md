@@ -46,7 +46,7 @@ npm start
 ```
 6. Open http://localhost:3000 in your browser.
 
-**Project Structure**
+## Project Structure
 ```bash
 src/
 │
@@ -63,7 +63,7 @@ src/
 └── .env                     # Environment variables for API keys
 ```
 
-***HOW ITS WORK***
+## HOW ITS WORK
 
 - Fetching Data: The News.js component fetches the news articles based on the selected category and displays them dynamically. News articles are fetched from the News API based on the category passed via the URL.
 - Infinite Scrolling: The InfiniteScroll component automatically loads more articles when the user reaches the bottom of the page.
@@ -78,15 +78,15 @@ src/
 - Loading Bar: The LoadingBar component provides a smooth loading experience while the app fetches new data.
 - Spinner: A spinner is displayed whenever the data is being loaded to let the user know that content is being fetched.
 
-**Usage**
+## Usage
 
 - View Categories: Click on any category in the navigation bar to view top headlines for that category.
 - Read More: Click the "Read more" button on any news article to open the full article in a new tab.
 
-**Contributing**
+## Contributing
 Contributions are welcome! Please feel free to fork the project, make changes, and submit pull requests.
 
-**How to Contribute**
+## How to Contribute
 - Fork the repository.
 - Create a new branch (git checkout -b feature-branch).
 - Make your changes and commit them (git commit -am 'Add new feature').
