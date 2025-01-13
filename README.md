@@ -62,6 +62,7 @@ src/
 ├── index.html               # HTML template
 └── .env                     # Environment variables for API keys
 ```
+
 ***HOW ITS WORK***
 
 - Fetching Data: The News.js component fetches the news articles based on the selected category and displays them dynamically. News articles are fetched from the News API based on the category passed via the URL.
