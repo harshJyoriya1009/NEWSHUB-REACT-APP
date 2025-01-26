@@ -26,7 +26,7 @@ NewsHub is a React-based web application that provides the latest news headlines
 
 1. Clone the repository:
   ```bash
-   git clone https://github.com/yourusername/newshub.git
+   git clone https://github.com/harshJyoriya1009/newshub.git
   ```
 2. Navigate to the project folder:
 ```bash
